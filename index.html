@@ -3,39 +3,178 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>دليل هيا اسكندراني للصحة والجمال</title>
+    <title>دليلك للصحة مع هيا | رحلة استعادة الحيوية</title>
+    
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://fonts.googleapis.com" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=Vazirmatn:wght@300;400;700&display=swap" rel="stylesheet">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    
     <style>
-        body { font-family: 'Cairo', sans-serif; background-color: #f0fdf4; }
-        .health-card { background: white; border-radius: 2rem; padding: 3rem; box-shadow: 0 20px 40px -10px rgba(0,0,0,0.1); border-left: 12px solid #166534; }
+        :root { --dxn-green: #1b4d3e; --gold: #d4af37; }
+        * { font-family: 'Vazirmatn', sans-serif; }
+        h1, h2, h3, .amiri { font-family: 'Amiri', serif !important; }
+        .hero-gradient { 
+            background: linear-gradient(rgba(27, 77, 62, 0.85), rgba(27, 77, 62, 0.85)), url('icons/office-exterior.png'); 
+            background-size: cover; 
+            background-position: center; 
+        }
+        .product-card { transition: all 0.3s ease; border-top: 4px solid var(--gold); }
+        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1); }
+        .glass-nav { background: rgba(255, 255, 255, 0.1); backdrop-filter: blur(10px); border: 1px solid rgba(255, 255, 255, 0.2); }
     </style>
 </head>
-<body class="p-6 text-gray-800 flex items-center justify-center min-h-screen">
+<body class="bg-[#fdfdfb] text-gray-800">
 
-    <div class="max-w-3xl w-full health-card">
-        <h1 class="text-4xl font-bold text-green-900 mb-6 text-center">دليل الصحة مع هيا اسكندراني</h1>
-        <p class="text-xl text-center text-green-700 font-semibold mb-10 italic">"صحتك هي أغلى ما تملكين.. ومعاً سنحافظ عليها"</p>
-        
-        <div class="space-y-6 mb-12">
-            <div class="p-5 bg-green-50 rounded-2xl border-r-4 border-green-600">
-                <h3 class="font-bold text-green-800 text-lg">قوة الطبيعة</h3>
-                <p class="text-gray-600">اكتشفي فوائد الفطر الريشي، المورينزي، والاسبيرولينا في تجديد خلايا جسمكِ.</p>
-            </div>
-            <div class="p-5 bg-green-50 rounded-2xl border-r-4 border-green-600">
-                <h3 class="font-bold text-green-800 text-lg">نمط حياة صحي</h3>
-                <p class="text-gray-600">كيف تتبنين عادات غذائية يومية بسيطة تمنحكِ النشاط والحيوية الدائمة.</p>
-            </div>
-            <div class="p-5 bg-green-50 rounded-2xl border-r-4 border-green-600">
-                <h3 class="font-bold text-green-800 text-lg">العناية الخارجية والداخلية</h3>
-                <p class="text-gray-600">جمالكِ يبدأ من الداخل، ومنتجات دكسن توفر لكِ الرعاية المتكاملة.</p>
-            </div>
+    <nav class="fixed top-0 left-0 right-0 z-50 p-4">
+        <div class="max-w-6xl mx-auto flex justify-between items-center glass-nav rounded-full px-6 py-2 shadow-lg">
+            <a href="https://morad1971.github.io/Haya-DXN/" class="text-white flex items-center gap-2 hover:text-[#d4af37] transition-all">
+                <i data-lucide="home" class="w-5 h-5"></i>
+                <span class="font-bold">الرئيسية</span>
+            </a>
+            <div class="text-white amiri text-xl font-bold italic">عالم هيا الصحي</div>
         </div>
+    </nav>
 
-        <div class="text-center">
-            <a href="https://morad1971.github.io" class="inline-block bg-green-800 text-white px-12 py-4 rounded-full font-bold shadow-xl hover:bg-green-900 transition transform hover:scale-105">العودة للرئيسية</a>
+    <header class="hero-gradient min-h-[60vh] flex items-center justify-center text-center pt-20 px-6">
+        <div class="max-w-4xl">
+            <h1 class="text-4xl md:text-6xl text-white font-bold mb-6">دليلك الشامل لنمط حياة صحي</h1>
+            <p class="text-xl text-gray-200 leading-relaxed mb-8 amiri italic">"جسمك أمانة.. والوقاية خيرٌ من ألف علاج. هنا نبدأ رحلة تنظيف السموم واستعادة الطاقة."</p>
         </div>
-    </div>
+    </header>
 
+    <main class="max-w-6xl mx-auto py-16 px-6">
+
+        <section class="flex flex-col md:flex-row items-center gap-12 mb-24 bg-white p-8 rounded-[40px] shadow-sm border border-gray-100">
+            <div class="md:w-1/2">
+                <img src="icons/haya-main.png" alt="هيا إسكندراني" class="w-full rounded-[30px] shadow-2xl border-4 border-white">
+            </div>
+            <div class="md:w-1/2">
+                <h2 class="text-3xl font-bold text-[#1b4d3e] mb-6">ليش جسمك بحاجة "صيانة"؟</h2>
+                <p class="text-lg leading-relaxed text-gray-600 mb-6 italic">
+                    في عالمنا اليوم، الأكل المهرمن، الهواء الملوث، والتوتر المستمر بيعملوا تراكم سموم في جسمك. هاد التراكم هو السبب الرئيسي للخمول، الصداع، ومشاكل الهضم.
+                </p>
+                <div class="bg-green-50 p-6 rounded-2xl border-r-4 border-[#1b4d3e] flex gap-4 items-start">
+                    <img src="icons/detox-icon.png" class="w-12 h-12 object-contain" alt="تنظيف">
+                    <div>
+                        <p class="font-bold text-[#1b4d3e]">السر في "القلوية":</p>
+                        <p class="text-sm text-gray-700">الأمراض بتعشق البيئة الحمضية.. دكسن بتعلمك كيف تخلي جسمك "قلوي" عشان يدافع عن نفسه بنفسه.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="mb-24 text-center">
+            <h2 class="text-3xl font-bold text-gray-800 mb-8">شاركي هيا جولتها في قلب عالم دكسن - الأردن</h2>
+            <div class="max-w-3xl mx-auto rounded-[30px] overflow-hidden shadow-2xl border-8 border-white relative">
+                <video controls class="w-full">
+                    <source src="icons/office-visit.mp4" type="video/mp4">
+                    متصفحك لا يدعم تشغيل الفيديو.
+                </video>
+            </div>
+            <p class="mt-6 text-gray-500 italic flex items-center justify-center gap-2">
+                <i data-lucide="map-pin" class="w-4 h-4 text-red-500"></i>
+                مقر الشركة الرسمي - الدوار الثامن، عمّان
+            </p>
+        </section>
+
+        <section class="mb-24">
+            <div class="text-center mb-16">
+                <h2 class="text-4xl font-bold text-[#1b4d3e] mb-4">المثلث الذهبي: إعادة ضبط المصنع</h2>
+                <p class="text-gray-500">أهم 3 مكملات لبناء أساس صحي متين</p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-10">
+                <div class="product-card bg-white p-8 rounded-3xl shadow-md text-center">
+                    <img src="icons/reishi.webp" class="w-32 h-32 mx-auto mb-6 object-contain" alt="الفطر الريشي">
+                    <h3 class="text-2xl font-bold mb-4">الفطر الريشي (RG/GL)</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        <b>ملك الأعشاب:</b> يستهدف "الخلية" ككاشف للسموم (Scanner) ويطردها من الكبد والكلى والدم. يقوي جهاز المناعة بشكل طبيعي ويوازن وظائف الأعضاء.
+                    </p>
+                </div>
+
+                <div class="product-card bg-white p-8 rounded-3xl shadow-md text-center border-t-[#22c55e]">
+                    <img src="icons/SPIRULINA.webp" class="w-32 h-32 mx-auto mb-6 object-contain" alt="الاسبيرولينا">
+                    <h3 class="text-2xl font-bold mb-4">الاسبيرولينا (الغذاء السوبر)</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        <b>منجم الفيتامينات:</b> ملعقة صغيرة تعادل كيلو فواكه وخضروات. ترفع الهيموجلوبين في الدم، تعزز الطاقة، وتجعل بيئة الجسم قلوية لمحاربة الأمراض.
+                    </p>
+                </div>
+
+                <div class="product-card bg-white p-8 rounded-3xl shadow-md text-center border-t-yellow-500">
+                    <img src="icons/morinzhe.webp" class="w-32 h-32 mx-auto mb-6 object-contain" alt="المورينزي">
+                    <h3 class="text-2xl font-bold mb-4">عصير المورينزي</h3>
+                    <p class="text-gray-600 leading-relaxed text-sm">
+                        <b>سر الإنزيمات:</b> يحسن الهضم بشكل سحري، يضبط ضغط الدم، ويحفز هرمون السعادة (السيروتونين) لتحسين المزاج وجودة النوم.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="bg-[#1b4d3e] text-white p-12 rounded-[50px] mb-24 overflow-hidden relative shadow-2xl">
+            <div class="relative z-10 flex flex-col md:flex-row items-center gap-12">
+                <div class="md:w-1/2">
+                    <h2 class="text-4xl font-bold mb-8 amiri text-[#d4af37]">بدائل الضيافة والعناية</h2>
+                    <ul class="space-y-8">
+                        <li class="flex gap-4 items-center">
+                            <img src="icons/Black-Coffee.webp" class="w-16 h-16 object-contain bg-white/10 p-2 rounded-xl" alt="قهوة">
+                            <div>
+                                <h4 class="font-bold text-xl">القهوة السوداء (2 في 1)</h4>
+                                <p class="text-gray-300 text-sm italic">طاقة وتركيز وحرق دهون دون توتر.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <img src="icons/Cocozhi.webp" class="w-16 h-16 object-contain bg-white/10 p-2 rounded-xl" alt="كوكوزي">
+                            <div>
+                                <h4 class="font-bold text-xl">كوكوزي الأطفال</h4>
+                                <p class="text-gray-300 text-sm italic">بديل النسكويك.. مناعة وذكاء لجيل صحي.</p>
+                            </div>
+                        </li>
+                        <li class="flex gap-4 items-center">
+                            <img src="icons/Tooth-paste.webp" class="w-16 h-16 object-contain bg-white/10 p-2 rounded-xl" alt="معجون">
+                            <div>
+                                <h4 class="font-bold text-xl">معجون جانوزي</h4>
+                                <p class="text-gray-300 text-sm italic">خالٍ من الفلورايد.. صيدلية متكاملة لفمك.</p>
+                            </div>
+                        </li>
+                    </ul>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="icons/office-interior.png" alt="أرفف المنتجات" class="rounded-3xl shadow-2xl border-4 border-white/20">
+                </div>
+            </div>
+        </section>
+
+        <section class="text-center py-12">
+            <h3 class="text-2xl font-bold mb-10">اقتنعتي بالنتائج الصحية؟ شوفي الخطوة الجاية:</h3>
+            <div class="flex flex-col gap-5 max-w-md mx-auto">
+                <a href="https://morad1971.github.io/Haya-Product-Catalog/" class="bg-[#d4af37] text-white py-5 px-8 rounded-full font-bold text-xl shadow-xl hover:scale-105 transition-all text-center">
+                    تصفحي الكتالوج الكامل ←
+                </a>
+                <a href="https://wa.me/9627XXXXXXXX" class="bg-[#25D366] text-white py-4 px-8 rounded-full font-bold text-lg shadow-md hover:opacity-90 flex items-center justify-center gap-2">
+                    <i data-lucide="message-circle"></i>
+                    استشارة صحية مجانية مع هيا
+                </a>
+                <div class="flex gap-4">
+                    <a href="https://morad1971.github.io/Haya-DXN-intro/" class="flex-1 bg-white border border-gray-200 text-gray-500 py-3 rounded-xl text-sm font-bold hover:bg-gray-50">
+                        رجوع لقصة البداية
+                    </a>
+                    <a href="https://morad1971.github.io/Haya-DXN/" class="flex-1 bg-white border border-gray-200 text-gray-500 py-3 rounded-xl text-sm font-bold hover:bg-gray-50">
+                        الرئيسية
+                    </a>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <footer class="bg-gray-100 py-12 text-center text-gray-400 text-sm">
+        <p class="amiri text-2xl mb-2 text-[#1b4d3e]">هيا اسكندراني</p>
+        <p>عالم واحد.. عائلة واحدة</p>
+        <p class="mt-4 italic text-xs">جميع الحقوق محفوظة © 2026</p>
+    </footer>
+
+    <script>
+        lucide.createIcons();
+    </script>
 </body>
 </html>
